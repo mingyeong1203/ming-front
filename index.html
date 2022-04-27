@@ -84,7 +84,7 @@
             let card = ` <div class="card">
                                 <div>
                                     <img class="card-img-top"
-                                         src="http://darbdyqkyf3s7.cloudfront.net//${data}"
+                                         src="darbdyqkyf3s7.cloudfront.net/${data}"
                                          alt="Card image cap">
                                     <p class="card-text comment">${data}</p>
                                 </div>
@@ -95,7 +95,7 @@
         function getCount() {
             $.ajax({
                 type: 'GET',
-                url: '{EB URL}/file/count',
+                url: 'http://pythonapp-env.eba-q7ypfbvr.ap-northeast-2.elasticbeanstalk.com//file/count',
                 success: function (data) {
                     $("#count").html(data.count);
                 },
